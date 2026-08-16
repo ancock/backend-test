@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reservation Backend Test</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="card">
+<p class="eyebrow">BACKEND LERNPROJEKT</p><h1>Tisch reservieren</h1>
+<p class="intro">Eine einfache Testseite. Die Reservierung wird später in Supabase gespeichert.</p>
+<form id="reservationForm">
+<label>Datum<input id="date" type="date" required></label>
+<label>Uhrzeit<select id="time" required><option value="">Bitte wählen</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option></select></label>
+<label>Personen<select id="guests" required><option value="">Bitte wählen</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
+<label>Name<input id="name" required placeholder="Max Mustermann"></label>
+<label>E-Mail<input id="email" type="email" required placeholder="max@example.com"></label>
+<button type="submit">Reservierung speichern</button></form>
+<p id="status" class="status"></p>
+<p class="hint">Nach dem Erstellen des Supabase-Projekts trägst du URL und Publishable Key in script.js ein.</p>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script></body></html>
