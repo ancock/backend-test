@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin – Reservierungen</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="admin-page">
+    <section class="admin-card">
+      <div class="admin-header">
+        <span class="eyebrow">ADMIN</span>
+        <h1>Reservierungen</h1>
+        <p>Hier kannst du die eingegangenen Reservierungen verwalten.</p>
+      </div>
+
+      <div id="admin-loading">Reservierungen werden geladen …</div>
+      <div id="admin-error" class="error-message" hidden></div>
+
+      <div id="reservations-container" hidden>
+        <div class="admin-toolbar">
+          <button id="refresh-btn" type="button">Aktualisieren</button>
+          <button id="logout-btn" type="button">Abmelden</button>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Uhrzeit</th>
+                <th>Name</th>
+                <th>Personen</th>
+                <th>E-Mail</th>
+                <th>Telefon</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="reservations-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Deine vorhandene Supabase-Datei weiterverwenden -->
+  <script src="js/supabase.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
