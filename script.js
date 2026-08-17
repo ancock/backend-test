@@ -1,6 +1,6 @@
 // 1) Nach dem Erstellen deines Supabase-Projekts hier eintragen.
-const SUPABASE_URL = "";
-const SUPABASE_PUBLISHABLE_KEY = "";
+const SUPABASE_URL = "https://tbrvwlsmfarawsnqvnwk.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_9SY4ue-YzN-K95a9aCBT_g_NGlWyfMY";
 
 const form = document.querySelector("#reservationForm");
 const statusBox = document.querySelector("#status");
